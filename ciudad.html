@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puerto Nuevo - La Ciudad</title>
+    <meta name="description" content="Información general, historia, geografía y datos clave de la ciudad de Puerto Nuevo.">
+    <title>Puerto Nuevo - Nuestra Ciudad</title>
 </head>
 <body>
+
     <header>
-        <h1>Puerto Nuevo</h1>
-        <nav>
+        <nav aria-label="Navegación principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciudad.html">La Ciudad</a></li>
+                <li><a href="ciudad.html" aria-current="page">Nuestra Ciudad</a></li>
                 <li><a href="lugares.html">Lugares de Interés</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -19,64 +20,84 @@
     </header>
 
     <main>
-        <h2>Historia, Identidad y Tradiciones</h2>
-
-        <p>Explorá los aspectos clave de nuestra ciudad: <a href="#datos-clave">Ver Ficha Técnica</a>.</p>
-
-        <section id="datos-clave">
-            <h3>Ficha Técnica y Datos Clave</h3>
-            <dl>
-                <dt>Nombre oficial</dt>
-                <dd>Puerto Nuevo</dd>
-                
-                <dt>Año de fundación</dt>
-                <dd>1874</dd>
-
-                <dt>Población</dt>
-                <dd>650.000 habitantes estables (supera 1.500.000 en temporada estival)</dd>
-
-                <dt>Gentilicio</dt>
-                <dd>Puertonovense</dd>
-
-                <dt>Clima</dt>
-                <dd>Templado oceánico (veranos cálidos y ventosos, inviernos fríos y húmedos)</dd>
-
-                <dt>Economía principal</dt>
-                <dd>Turismo de verano, pesca, industria naval y comercio</dd>
-            </dl>
+        <section id="presentacion">
+            <h1>Puerto Nuevo: Historia, Identidad y Comunidad</h1>
+            <p>Ubicada sobre la bahía costera, Puerto Nuevo combina una rica historia marítima con un crecimiento urbano moderno y sostenible. Descubrí los orígenes, los datos clave y la cultura que definen a nuestra comunidad.</p>
         </section>
 
-        <article>
-            <h3>Historia de la Ciudad</h3>
-            <p>Puerto Nuevo nació en <strong>1874</strong> como una pequeña colonia de pescadores junto a una bahía natural[cite: 2]. A fines del siglo XIX, familias adineradas comenzaron a construir chalets sobre la costa, y la llegada del ferrocarril en 1886 consolidó a la ciudad como el balneario de moda de la época[cite: 2].</p>
-            
-            <p>Durante las primeras décadas del siglo XX se construyeron las obras más emblemáticas: la Rambla y el Casino Atlántico[cite: 2]. En 1905, los trabajadores del puerto fundaron el club de fútbol local, apodado <em>Los Marineros</em>, ícono del orgullo popular[cite: 2].</p>
-        </article>
+        <section id="historia">
+            <h2>Historia y Orígenes</h2>
+            <article>
+                <h3>Fundación y Primeros Asentamientos</h3>
+                <p>Fundada en 1902 como un pequeño poblado pesquero, Puerto Nuevo creció rápidamente gracias a la instalación de su puerto comercial. Durante las primeras décadas del siglo XX, la llegada de familias inmigrantes dio origen a los primeros barrios tradicionales y a una fuerte identidad comunitaria.</p>
+            </article>
 
-        <section>
-            <h3>Costumbres Puertonovenses</h3>
+            <article>
+                <h3>Desarrollo Marítimo e Industrial</h3>
+                <p>A mediados del siglo XX, la ciudad transformó su infraestructura portuaria, convirtiéndose en un punto estratégico para el comercio regional. La preservación de su casco histórico junto con el desarrollo de espacios verdes ha permitido mantener un equilibrio entre progreso y tradición.</p>
+            </article>
+        </section>
+
+        <section id="geografia-y-clima">
+            <h2>Geografía y Entorno Natural</h2>
+            <p>La ciudad se extiende a lo largo de 45 kilómetros de costa marina, rodeada por reservas naturales protegidas y áreas de acantilados.</p>
+            
+            <figure>
+                <img src="img/puerto.jpg" alt="Vista panorámica de la zona portuaria y el faro histórico de Puerto Nuevo al atardecer">
+                <figcaption>Vista costera del puerto histórico y el paseo marítimo principal.</figcaption>
+            </figure>
+        </section>
+
+        <section id="datos-generales">
+            <h2>Información General y Demográfica</h2>
+            <table>
+                <caption>Ficha técnica y datos clave de Puerto Nuevo</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Indicador</th>
+                        <th scope="col">Detalle / Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Año de Fundación</th>
+                        <td>12 de octubre de 1902</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Población Estimada</th>
+                        <td>125.400 habitantes</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Superficie Total</th>
+                        <td>88,5 km²</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Clima</th>
+                        <td>Templado marítimo (media de 16 °C)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Región</th>
+                        <td>Costa Marítima Sur</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="costumbres-y-cultura">
+            <h2>Tradiciones y Vida Cultural</h2>
+            <p>Puerto Nuevo se destaca por sus festejos populares y una gastronomía basada en productos de mar:</p>
             <ul>
-                <li>Excursiones de avistaje de <em>toninas overas</em> en la bahía[cite: 2].</li>
-                <li>Paseos tradicionales en bicicleta por la Rambla[cite: 2].</li>
-                <li>Fiesta del Pescador realizada en el mes de marzo[cite: 2].</li>
-                <li>Gastronomía típica basada en pescado rebozado y alfajores artesanales[cite: 2].</li>
+                <li><strong>Fiesta Nacional de la Pesca Náutica:</strong> Celebración anual realizada en noviembre con ferias gastronómicas y espectáculos en vivo.</li>
+                <li><strong>Feria de Artesanos del Faro:</strong> Encuentro cultural de fin de semana en el paseo marítimo.</li>
+                <li><strong>Gastronomía Local:</strong> Tradición culinaria enfocada en cazuelas de mariscos y pescados frescos de la bahía.</li>
             </ul>
         </section>
-
-        <aside>
-            <h3>Barrios y Zonas Principales</h3>
-            <ol>
-                <li><strong>Centro y Rambla:</strong> Zona comercial, hotelera y gastronómica[cite: 2].</li>
-                <li><strong>El Puerto:</strong> Barrio histórico de pescadores y astilleros[cite: 2].</li>
-                <li><strong>Punta Alta:</strong> Zona de chalets sobre acantilados[cite: 2].</li>
-                <li><strong>Barrio Norte:</strong> Zona residencial y de médanos tranquilos[cite: 2].</li>
-                <li><strong>Bosque Municipal:</strong> Pulmón verde con lago artificial[cite: 2].</li>
-            </ol>
-        </aside>
     </main>
 
     <footer>
-        <p>2026 Municipalidad de Puerto Nuevo - Ente Municipal de Turismo. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Municipalidad de Puerto Nuevo - Ente Municipal de Turismo. Todos los derechos reservados.</p>
+        <!-- Proyecto académico realizado para Lenguajes Informáticos 1 - UNAHUR -->
     </footer>
+
 </body>
 </html>
