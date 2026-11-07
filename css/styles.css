@@ -335,3 +335,59 @@ dd {
 #lugares > article:hover {
     transform: translateY(-4px);
 }
+
+
+/* Botón de Modo Oscuro */
+.btn-modo {
+    background-color: var(--color-acento);
+    color: var(--color-texto-claro);
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-modo:hover {
+    background-color: var(--color-acento-claro);
+}
+
+body.modo-oscuro {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.modo-oscuro header {
+    background-color: #0b132b;
+}
+
+/* Agregamos #inicio a la lista */
+body.modo-oscuro #presentacion,
+body.modo-oscuro #inicio,
+body.modo-oscuro #contacto-info,
+body.modo-oscuro #contacto-formulario,
+body.modo-oscuro article,
+body.modo-oscuro table {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.modo-oscuro h1, 
+body.modo-oscuro h2, 
+body.modo-oscuro h3,
+body.modo-oscuro dt {
+    color: #4da8da;
+}
+
+body.modo-oscuro input,
+body.modo-oscuro select,
+body.modo-oscuro textarea {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border-color: #026e7d;
+}
+
+body.modo-oscuro footer {
+    background-color: #080d1a;
+}
