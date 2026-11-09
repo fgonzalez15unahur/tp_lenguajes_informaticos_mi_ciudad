@@ -391,3 +391,28 @@ body.modo-oscuro textarea {
 body.modo-oscuro footer {
     background-color: #080d1a;
 }
+header {
+    padding: 0;
+    border-bottom: 4px solid var(--color-acento);
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+.navbar {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    --bs-navbar-color: rgba(255, 255, 255, 0.85);
+    --bs-navbar-hover-color: var(--color-acento-claro);
+    --bs-navbar-active-color: #ffffff;
+}
+
+.logo-navbar {
+    height: 44px;
+    width: auto;
+}
+/* Para que las imágenes de las tarjetas tengan la misma altura y no desalinien el contenido */
+.card img.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
