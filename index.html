@@ -27,7 +27,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item active navbar-brand"><a class="nav-link" href="#inicio">Puerto Nuevo</a></li>
+                        <li class="nav-item active navbar-brand"><a class="nav-link" href="#inicio">Puerto Nuevo</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
                         <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
                         <li class="nav-item"><a class="nav-link" href="#eventos">Eventos</a></li>
@@ -60,70 +61,109 @@
                 <a href="ciudad.html" class="btn">Conocer la ciudad</a>
             </div>
         </section>
-        <section id="lugares">
-            <h2>Lugares de interes.</h2>
-            <article>
-                <h3>Bahia de las Toninas.</h3>
-                <img src="img/toninas-delfin.jpg" alt="Toninas overas nadando en la bahia" loading="lazy">
-                <p>
-                    Un lugar privilegiado para observar toninas overas
-                    en su hábitat natural.
-                </p>
-                <a href="lugares.html#article-bahias-toninas" class="btn-lugares">Conocer más</a>
-            </article>
-            <article>
-                <h3>Playa Grande del Puerto.</h3>
-                <img src="img/playa-grande.jpg" alt="Playa grande" loading="lazy">
-                <p>
-                    La playa más popular de la ciudad, ubicada junto
-                    a la Rambla.
-                </p>
-                <a href="lugares.html#article-playa-grande-del-puerto" class="btn-lugares">Conocer más.</a>
-            </article>
-            <article>
-                <h3>Puerto de Pescadores</h3>
-                <img src="img/puerto-pescadores.jpg" alt="Embarcaciones en el puerto pesquero de Puerto Nuevo">
-                <p>
-                    El corazón histórico de la actividad pesquera
-                    de Puerto Nuevo.
-                </p>
-                <a href="lugares.html#article-playa-grande-del-puerto#article-puerto-pescadores"
-                    class="btn-lugares">Conocer más.</a>
-            </article>
+        <section id="lugares" class="container py-5">
+            <h2 class="text-center mb-4">Lugares de interes.</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+                <article class="col">
+                    <div class="card h-100">
+                        <img src="img/toninas-delfin.jpg" alt="Toninas overas nadando en la bahia" class="card-img-top">
+                        <div class="card-body ">
+                            <h3 class="card-title">Bahia de las Toninas.</h3>
+                            <p class="card-text">
+                                Un lugar privilegiado para observar toninas overas
+                                en su hábitat natural.
+                            </p>
+                            <a href="lugares.html#article-bahias-toninas" class="btn btn-primary">Conocer más</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="card h-100">
+                        <img src="img/playa-grande.jpg" alt="Playa grande" class="card-img-top">
+                        <div class="card-body ">
+                            <h3 class="card-title">Playa Grande del Puerto.</h3>
+                            <p class="card-text">
+                                La playa más popular de la ciudad, ubicada junto
+                                a la Rambla.
+                            </p>
+                            <a href="lugares.html#article-playa-grande-del-puerto" class="btn btn-primary">Conocer
+                                más.</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="card h-100">
+                        <img src="img/puerto-pescadores.jpg" alt="Embarcaciones en el puerto pesquero de Puerto Nuevo"
+                            class="card-img-top">
+                        <div class="card-body ">
+                            <h3 class="card-title">Puerto de Pescadores</h3>
+                            <p class="card-text">
+                                El corazón histórico de la actividad pesquera
+                                de Puerto Nuevo.
+                            </p>
+                            <a href="lugares.html#article-playa-grande-del-puerto#article-puerto-pescadores"
+                                class="btn btn-primary">Conocer más.</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
-        <section id="eventos">
-            <h2>Eventos destacados.</h2>
-            <article>
-                <h3>Fiesta del pescados.</h3>
-                <img src="img/fiesta-pescadores.jpg" alt="Fiesta de pescadores">
-                <p>
-                    Celebración realizada en marzo para homenajear
-                    la tradición pesquera de Puerto Nuevo.
-                </p>
-            </article>
-            <article>
-                <h3>Apertura de temporada de verano.</h3>
-                <p>
-                    En diciembre comienza oficialmente la temporada
-                    de verano con actividades para turistas.
-                </p>
-            </article>
-            <article>
-                <h3>Festival de Cine de Puerto Nuevo.</h3>
-                <p>
-                    Festival cultural que reúne películas, realizadores
-                    y actividades relacionadas con el cine durante noviembre.
-                </p>
-            </article>
-            <article>
-                <h3>Temporada de avistaje de toninas.</h3>
-                <p>
-                    Durante primavera y verano se realizan excursiones
-                    guiadas desde el puerto para observar toninas overas.
-                </p>
-            </article>
+        <section id="eventos" class="container py-5">
+            <h2 class="text-center mb-4">Eventos destacados.</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+                <article class="col">
+                    <div class="card h-100">
+                        <img src="img/fiesta-pescadores.jpg" alt="Fiesta de pescadores" class="card-img-top">
+                        <div class="card-body ">
+                            <h3 class="card-title">Fiesta del pescados.</h3>
+                            <p class="card-text">
+                                Celebración realizada en marzo para homenajear
+                                la tradición pesquera de Puerto Nuevo.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="card h-100">
+                        <img src="img/apartura-temporada-verano.jpg" alt="Fiesta de pescadores" class="card-img-top">
+                        <div class="card-body ">
+                            <h3 class="card-title">Apertura de temporada de verano.</h3>
+                            <p class="card-text">
+                                En diciembre comienza oficialmente la temporada
+                                de verano con actividades para turistas.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col">
+                    <div class="card h-100">
+                        <img src="img/festival-cine.jpg" alt="Fiesta de pescadores" class="card-img-top">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Festival de Cine de Puerto Nuevo.</h3>
+                            <p class="card-text">
+                                Festival cultural que reúne películas, realizadores
+                                y actividades relacionadas con el cine durante noviembre.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col ">
+                    <div class="card h-100">
+                        <img src="img/evento-toninas.jpg" alt="Fiesta de pescadores" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Temporada de avistaje de toninas.</h3>
+                            <p class="card-text">
+                                Durante primavera y verano se realizan excursiones
+                                guiadas desde el puerto para observar toninas overas.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
-        <section id="identidad">
+        <section id="identidad" class="container">
             <h2>La pasión por Puerto Nuevo.</h2>
 
             <p>
@@ -136,6 +176,7 @@
                 Los días de partido, las banderas del club llenan las
                 calles del centro y el barrio El Puerto.
             </p>
+            <img src="img/estadio-futbol.jpg" class="img-fluid rounded" alt="Estadio de Puerto Nuevo">
         </section>
     </main>
     <footer id="contacto">
