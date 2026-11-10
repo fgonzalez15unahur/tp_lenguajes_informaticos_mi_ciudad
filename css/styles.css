@@ -91,9 +91,12 @@ nav a:hover {
     border-bottom-color: var(--color-acento-claro);
 }
 
-nav a[aria-current="page"] {
+
+.navbar nav a[aria-current="page"] {
     border-bottom-color: var(--color-texto-claro);
 }
+
+
 
 footer {
     background-color: var(--color-footer);
@@ -417,3 +420,6 @@ header {
     height: 220px;
     object-fit: cover;
 }
+
+/* Bootstrap - personalizaciones
+

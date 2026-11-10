@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Información general, historia, geografía y datos clave de la ciudad de Puerto Nuevo.">
-    <title>Puerto Nuevo - Ciudad</title>
-    <link rel="icon" type="image/png" href="img/logo-puerto-nuevo.png">
+    <meta name="description"
+        content="Página informativa sobre Puerto Nuevo, sus lugares turísticos, historia y principales atractivos.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS: antes del CSS propio -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS propio del sitio -->
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Puerto Nuevo</title>
 </head>
+
 <body class="pagina-ciudad">
 
     <header>
         <button id="btn-modo" class="btn-modo" type="button">Modo oscuro</button>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciudad.html" aria-current="page">Ciudad</a></li>
-                <li><a href="lugares.html">Lugares</a></li>
-                <li><a href="index.html#eventos">Eventos</a></li>
-                <li><a href="index.html#identidad">Identidad</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav aria-label="Navegación principal" class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active navbar-brand"><a href="index.html">Puerto Nuevo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ciudad.html" aria-current="page">Ciudad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#eventos">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#identidad">Identidad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="presentacion" class="container py-4">
-            <h1>Puerto Nuevo: Historia, Identidad y Comunidad</h1>
-            <p class="lead">Puerto Nuevo es una ciudad balnearia ubicada en la costa atlántica de la Provincia de Buenos Aires. Fundada en 1874, combina playas, tradición pesquera, cultura y naturaleza, destacándose por sus toninas overas y su puerto pesquero.</p>
-            <img src="img/puertonuevoprincipal.png" class="hero-ciudad-img" alt="Vista panorámica del puerto de Puerto Nuevo">
+            <h1>Puerto Nuevo    : Historia, Identidad y Comunidad</h1>
+            <p class="lead">Puerto Nuevo es una ciudad balnearia ubicada en la costa atlántica de la Provincia de Buenos
+                Aires. Fundada en 1874, combina playas, tradición pesquera, cultura y naturaleza, destacándose por sus
+                toninas overas y su puerto pesquero.</p>
+            <img src="img/puertonuevoprincipal.png" class="hero-ciudad-img"
+                alt="Vista panorámica del puerto de Puerto Nuevo">
         </section>
 
         <!-- Datos rápidos: Flexbox con flex-wrap, gap y flex: 1 1 Xpx -->
@@ -53,22 +67,29 @@
             <div class="row g-4">
                 <div class="col-12 col-md-6">
                     <div class="card h-100 shadow-sm">
-                        <img src="img/puertonuevo.jpg" class="card-img-top" alt="Fotografía histórica de los primeros pobladores y botes de pesca en la costa de Puerto Nuevo, circa 1874.">
+                        <img src="img/puertonuevo.jpg" class="card-img-top"
+                            alt="Fotografía histórica de los primeros pobladores y botes de pesca en la costa de Puerto Nuevo, circa 1874.">
                         <div class="card-body">
                             <span class="badge bg-primary mb-2">1874</span>
                             <h3 class="card-title h5">Fundación y Primeros Asentamientos</h3>
-                            <p class="card-text">Fundada en 1874 gracias a la visión de pioneros que apostaron por el crecimiento de la región. En sus inicios funcionó como un modesto poblado pesquero que creció rápidamente con la llegada de familias inmigrantes que moldearon su identidad comunitaria.</p>
+                            <p class="card-text">Fundada en 1874 gracias a la visión de pioneros que apostaron por el
+                                crecimiento de la región. En sus inicios funcionó como un modesto poblado pesquero que
+                                creció rápidamente con la llegada de familias inmigrantes que moldearon su identidad
+                                comunitaria.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6">
                     <div class="card h-100 shadow-sm">
-                        <img src="img/Desarrollo-Marítimo-Industrial.jpg" class="card-img-top" alt="Fotografía histórica en sepia de Puerto Nuevo mostrando el desarrollo marítimo con grandes barcos de vapor y grúas industriales, circa 1930.">
+                        <img src="img/Desarrollo-Marítimo-Industrial.jpg" class="card-img-top"
+                            alt="Fotografía histórica en sepia de Puerto Nuevo mostrando el desarrollo marítimo con grandes barcos de vapor y grúas industriales, circa 1930.">
                         <div class="card-body">
                             <span class="badge bg-primary mb-2">Siglo XX</span>
                             <h3 class="card-title h5">Desarrollo Marítimo e Industrial</h3>
-                            <p class="card-text">A mediados del siglo XX, la ciudad transformó su infraestructura portuaria, convirtiéndose en un punto estratégico para el comercio regional y la actividad pesquera de la costa atlántica bonaerense.</p>
+                            <p class="card-text">A mediados del siglo XX, la ciudad transformó su infraestructura
+                                portuaria, convirtiéndose en un punto estratégico para el comercio regional y la
+                                actividad pesquera de la costa atlántica bonaerense.</p>
                         </div>
                     </div>
                 </div>
@@ -78,12 +99,15 @@
         <!-- Geografía: badge con position absolute sobre la imagen -->
         <section id="geografia-y-clima" class="container mb-5">
             <h2>Geografía y Entorno Natural</h2>
-            <p>La ciudad se extiende a lo largo de 45 kilómetros de costa marina, rodeada por reservas naturales protegidas, amplias playas y áreas de acantilados ideales para el avistaje de fauna local.</p>
+            <p>La ciudad se extiende a lo largo de 45 kilómetros de costa marina, rodeada por reservas naturales
+                protegidas, amplias playas y áreas de acantilados ideales para el avistaje de fauna local.</p>
 
             <figure class="figura-destacada mt-3">
-                <img src="img/puerto.png" class="img-fluid rounded" alt="Vista panorámica de la zona portuaria y el faro histórico de Puerto Nuevo al atardecer">
+                <img src="img/puerto.png" class="img-fluid rounded"
+                    alt="Vista panorámica de la zona portuaria y el faro histórico de Puerto Nuevo al atardecer">
                 <span class="badge bg-warning text-dark figura-badge">45 km de costa</span>
-                <figcaption class="text-muted mt-2">Vista costera del puerto histórico y el paseo marítimo principal.</figcaption>
+                <figcaption class="text-muted mt-2">Vista costera del puerto histórico y el paseo marítimo principal.
+                </figcaption>
             </figure>
         </section>
 
@@ -127,19 +151,22 @@
         <!-- Cultura: Accordion de Bootstrap -->
         <section id="costumbres-y-cultura" class="container mb-5">
             <h2>Tradiciones, Deportes y Vida Cultural</h2>
-            <p>Puerto Nuevo se destaca por sus festejos populares, su fuerte arraigo deportivo y una gastronomía basada en productos de mar:</p>
+            <p>Puerto Nuevo se destaca por sus festejos populares, su fuerte arraigo deportivo y una gastronomía basada
+                en productos de mar:</p>
 
             <div class="accordion" id="acordeonCultura">
                 <div class="accordion-item">
                     <h3 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#cultura1" aria-expanded="true" aria-controls="cultura1">
+                            data-bs-target="#cultura1" aria-expanded="true" aria-controls="cultura1">
                             Fiesta del Pescado y Temporada de Verano
                         </button>
                     </h3>
                     <div id="cultura1" class="accordion-collapse collapse show" data-bs-parent="#acordeonCultura">
                         <div class="accordion-body">
-                            Celebración realizada en marzo para homenajear la tradición pesquera de la ciudad. Además, en diciembre comienza oficialmente la temporada de verano con actividades recreativas para turistas.
+                            Celebración realizada en marzo para homenajear la tradición pesquera de la ciudad. Además,
+                            en diciembre comienza oficialmente la temporada de verano con actividades recreativas para
+                            turistas.
                         </div>
                     </div>
                 </div>
@@ -147,13 +174,15 @@
                 <div class="accordion-item">
                     <h3 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#cultura2" aria-expanded="false" aria-controls="cultura2">
+                            data-bs-target="#cultura2" aria-expanded="false" aria-controls="cultura2">
                             Festival de Cine y Avistaje de Toninas
                         </button>
                     </h3>
                     <div id="cultura2" class="accordion-collapse collapse" data-bs-parent="#acordeonCultura">
                         <div class="accordion-body">
-                            Durante noviembre se lleva a cabo el Festival de Cine de Puerto Nuevo. Asimismo, en primavera y verano se realizan excursiones guiadas desde el puerto para observar toninas overas en su hábitat natural.
+                            Durante noviembre se lleva a cabo el Festival de Cine de Puerto Nuevo. Asimismo, en
+                            primavera y verano se realizan excursiones guiadas desde el puerto para observar toninas
+                            overas en su hábitat natural.
                         </div>
                     </div>
                 </div>
@@ -161,13 +190,15 @@
                 <div class="accordion-item">
                     <h3 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#cultura3" aria-expanded="false" aria-controls="cultura3">
+                            data-bs-target="#cultura3" aria-expanded="false" aria-controls="cultura3">
                             La Pasión por el Fútbol: Puerto Nuevo F.C.
                         </button>
                     </h3>
                     <div id="cultura3" class="accordion-collapse collapse" data-bs-parent="#acordeonCultura">
                         <div class="accordion-body">
-                            Puerto Nuevo Fútbol Club, conocido como "Los Marineros", es uno de los símbolos deportivos de la ciudad desde su fundación en 1905. Los días de partido, las banderas del club llenan las calles del centro y el barrio El Puerto.
+                            Puerto Nuevo Fútbol Club, conocido como "Los Marineros", es uno de los símbolos deportivos
+                            de la ciudad desde su fundación en 1905. Los días de partido, las banderas del club llenan
+                            las calles del centro y el barrio El Puerto.
                         </div>
                     </div>
                 </div>
@@ -188,4 +219,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

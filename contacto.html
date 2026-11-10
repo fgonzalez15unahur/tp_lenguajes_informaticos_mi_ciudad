@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Información de contacto, horarios de atención y formulario de consultas de la Oficina de Turismo de Puerto Nuevo.">
-    <title>Puerto Nuevo - Contacto</title>
+    <meta name="description"
+        content="Página informativa sobre Puerto Nuevo, sus lugares turísticos, historia y principales atractivos.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Puerto Nuevo</title>
 </head>
+
 <body>
 
     <header>
-        <h1>Puerto Nuevo</h1>
         <button id="btn-modo" class="btn-modo" type="button">🌙 Modo oscuro</button>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciudad.html">Ciudad</a></li>
-                <li><a href="lugares.html">Lugares</a></li>
-                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
-            </ul>
+        <nav aria-label="Navegación principal" class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active navbar-brand"><a class="nav-link" href="index.html">Puerto Nuevo</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                    <li class="nav-item active"><a  class="nav-link" href="contacto.html" aria-current="page">Contacto</a></li>
+                </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="presentacion">
             <h1>Oficina de Turismo</h1>
-            <p>¿Tenés dudas o querés planificar tu visita a Puerto Nuevo? Ponete en contacto con nosotros o dejanos tu consulta a través del formulario.</p>
+            <p>¿Tenés dudas o querés planificar tu visita a Puerto Nuevo? Ponete en contacto con nosotros o dejanos tu
+                consulta a través del formulario.</p>
         </section>
 
         <div class="contacto-contenedor">
@@ -37,15 +51,16 @@
                 <dl>
                     <dt>Dirección</dt>
                     <dd>Costanera 1200, Puerto Nuevo, Provincia de Buenos Aires</dd>
-                    
+
                     <dt>Email</dt>
                     <dd><a href="mailto:turismo@puertonuevo.gob.ar">turismo@puertonuevo.gob.ar</a></dd>
-                    
+
                     <dt>Teléfono</dt>
                     <dd><a href="tel:+542235550177">+54 223 555-0177</a></dd>
-                    
+
                     <dt>Instagram</dt>
-                    <dd><a href="https://www.instagram.com/puerto_nuevo_mi_ciudad" target="_blank" rel="noopener noreferrer">@puerto_nuevo_mi_ciudad</a></dd>
+                    <dd><a href="https://www.instagram.com/puerto_nuevo_mi_ciudad" target="_blank"
+                            rel="noopener noreferrer">@puerto_nuevo_mi_ciudad</a></dd>
                 </dl>
 
                 <h2>Horarios de Atención</h2>
@@ -72,7 +87,8 @@
                     </select>
 
                     <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje aquí..." required></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje aquí..."
+                        required></textarea>
 
                     <button type="submit">Enviar mensaje</button>
                 </form>
@@ -86,4 +102,5 @@
     </footer>
     <script src="js/main.js"></script>
 </body>
+
 </html>
