@@ -4,7 +4,10 @@
     --color-acento: #F3C375;
     --color-acento-claro: #dd963a;
     --color-fondo: #F6E3D6;
+    --color-texto-claro: #FFFFFF;
+    --color-fondo-alt: #ebd3c3;
     --fuente-principal: 'Outfit', sans-serif;
+    --ancho-minimo: 320px;
 }
 
 * {
@@ -19,8 +22,7 @@ body {
     font-family: var(--fuente-principal);
     font-size: 16px;
     line-height: 1.7;
-    margin: 0;
-    min-width: 320px;
+    min-width: var(--ancho-minimo);
 }
 
 h1, h2, h3 {
@@ -67,7 +69,7 @@ header {
 }
 
 .header-logo {
-    color: var(--color-texto-claro);
+    color: var(--color-secundario);
     font-weight: 400;
     letter-spacing: 0.03em;
     font-size: 1.8rem;
@@ -75,7 +77,7 @@ header {
 }
 
 header a{
-    color: var(--color-texto-claro);
+    color: var(--color-secundario);
     text-decoration: none;
     font-weight: 600;
     font-size: 1.5rem;
@@ -132,46 +134,29 @@ ul{
 
 /* MAIN Y FOOTER */
 footer {
-    background-color: var(--color-footer);
-    color: var(--color-texto-claro);
-    padding: 1.5rem 1rem;
-    margin-top: 3rem;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    padding: 1rem 1.5rem;
     text-align: center;
     font-size: 0.9rem;
+    margin-top: 1rem;
 }
 
 footer p {
-    max-width: var(--ancho-maximo);
-    margin: 0 auto 0.5rem;
+    margin: 0.2rem 0;
 }
-
-footer a {
-    color: var(--color-acento-claro);
-    font-weight: 600;
-}
-
-footer a:hover {
-    color: var(--color-texto-claro);
-}
-
 
 main {
-    max-width: var(--ancho-maximo);
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 1.5rem;
 }
 
 section {
     margin-bottom: 2.5rem;
 }
 
-p {
-    margin-bottom: 1rem;
-}
-
 #presentacion,
 #inicio {
-    background-color: var(--color-texto-claro);
     border-left: 6px solid var(--color-acento);
     padding: 2rem 1.5rem;
 }
@@ -188,15 +173,15 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    text-align: center;
     transform: translate(-50%, -50%);
+    width: 80%;
 }
 .hero h1{
     color: var(--color-texto-claro);
 }
 .hero .btn{
     background-color: var(--color-acento);
-    color: var(--color-texto-claro);
+    color: var(--color-secundario);
     text-decoration: none;
     padding: 0.75rem 1.75rem;
 }
@@ -209,6 +194,7 @@ p {
 .hero .btn:hover{
     background-color: var(--color-acento-claro) ;
 }
+
 article {
     margin-bottom: 1.5rem;
     padding-left: 1rem;
@@ -307,7 +293,7 @@ select {
     border-radius: 4px;
     font-family: inherit;
     font-size: 1rem;
-    background-color: var(--color-texto-claro);
+    background-color: var(--color-fondo-alt);
     color: var(--color-texto);
 }
 
@@ -318,24 +304,6 @@ select:focus {
     border-color: var(--color-acento);
 }
 
-button,
-input[type="submit"] {
-    width: auto;
-    padding: 0.6rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    background-color: var(--color-secundario);
-    color: var(--color-texto-claro);
-    font-family: inherit;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-button:hover,
-input[type="submit"]:hover {
-    background-color: var(--color-primario);
-}
 article section {
     margin-bottom: 0;
 }
@@ -358,7 +326,6 @@ dd {
 #contacto-info,
 #contacto-formulario {
     flex: 1 1 300px;
-    background-color: var(--color-texto-claro);
     padding: 1.5rem;
     border-radius: 6px;
     border-top: 4px solid var(--color-primario);
@@ -375,7 +342,9 @@ dd {
 
 
 /* Botón de Modo Oscuro */
-.btn-modo {
+.btn-modo,
+button,
+input[type="submit"] {
     background-color: var(--color-acento);
     color: var(--color-secundario);
     border: none;
@@ -390,52 +359,71 @@ dd {
     gap: 0.2rem;
 }
 
-.btn-modo:hover {
+.btn-modo:hover,
+button:hover,
+input[type="submit"]:hover {
     background-color: var(--color-acento-claro);
 }
 
+/* Modo oscuro */
 body.modo-oscuro {
     background-color: #121212;
     color: #e0e0e0;
 }
 
-body.modo-oscuro header {
+body.modo-oscuro header,
+body.modo-oscuro footer,
+body.modo-oscuro .accordion-button:not(.collapsed) {
     background-color: #0b132b;
+    color: #4da8da;
 }
 
-/* Agregamos #inicio a la lista */
+body.modo-oscuro .header-logo {
+    color: var(--color-acento);
+}
+
 body.modo-oscuro #presentacion,
 body.modo-oscuro #inicio,
 body.modo-oscuro #contacto-info,
 body.modo-oscuro #contacto-formulario,
 body.modo-oscuro article,
-body.modo-oscuro table {
+body.modo-oscuro table,
+body.modo-oscuro .card,
+body.modo-oscuro .accordion-item {
     background-color: #1e1e1e;
-    color: #ffffff;
-}
-
-body.modo-oscuro h1, 
-body.modo-oscuro h2, 
-body.modo-oscuro h3,
-body.modo-oscuro dt {
-    color: #4da8da;
+    color: var(--color-texto-claro);
+    border-color: #026e7d;
 }
 
 body.modo-oscuro input,
 body.modo-oscuro select,
-body.modo-oscuro textarea {
+body.modo-oscuro textarea,
+body.modo-oscuro .accordion-button {
     background-color: #2b2b2b;
-    color: #ffffff;
+    color: var(--color-texto-claro);
     border-color: #026e7d;
 }
 
-body.modo-oscuro footer {
-    background-color: #080d1a;
+body.modo-oscuro h1,
+body.modo-oscuro h2,
+body.modo-oscuro h3,
+body.modo-oscuro dt,
+body.modo-oscuro a {
+    color: #4da8da;
+}
+body.modo-oscuro .btn-primary{
+    background-color: #026e7d;
+    color: var(--color-texto-claro);
+    border-color: #4da8da;
 }
 
 body.modo-oscuro .btn-modo svg {
     width: 18px;
     height: 18px;
+}
+
+body.modo-oscuro .accordion-button::after {
+    filter: invert(1);
 }
 
 /* Para que las imágenes de las tarjetas tengan la misma altura y no desalinien el contenido */
@@ -453,7 +441,7 @@ body.modo-oscuro .btn-modo svg {
 }
 /* Bootstrap - personalizaciones */
 .card{
-     width: 30rem;
+     width: 100%;
 }
 
 article {
@@ -462,49 +450,50 @@ article {
     border-left: none;
 }
 
-.btn-primary{
-        background-color: var(--color-acento);
-        color: var(--color-texto-claro);
-        border-color: var(--color-acento-claro);
-        
+.btn-primary {
+    background-color: var(--color-acento);
+    color: var(--color-secundario);
+    border-color: var(--color-acento-claro);
 }
-.btn-primary:hover{
-    background-color:  var(--color-acento-claro);
-     border-color: var(--color-acento-claro);
+
+.btn-primary:hover {
+    background-color: var(--color-acento-claro);
+    border-color: var(--color-acento-claro);
+    color: var(--color-texto-claro);
 }
 
 /* RESPONSIVE */
-@media (max-width: 460px){
-.btn-hamburguesa{
-    display: block;
-  }
-
-.btn-modo{
-    width: 2rem;
-    height: 2rem;
-    padding: 0;
-    border-radius: 50%;
-    font-size: 1.1rem;
-    }
-
-.texto-modo{
-    display: none;
-  }
-
-.navbar-responsive {
-        display: none;
-        width: 100%;
-    }
-
-    /* 2. Cuando JS agrega .abierto al tocar la hamburguesa, aparece */
-    .navbar-responsive.abierto {
+@media (max-width: 490px){
+    .btn-hamburguesa{
         display: block;
     }
 
-.navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    padding: 0.75rem 0;
+    .btn-modo{
+        width: 2rem;
+        height: 2rem;
+        padding: 0;
+        border-radius: 50%;
+        font-size: 1.1rem;
+        }
+
+    .texto-modo{
+        display: none;
     }
+
+    .navbar-responsive {
+            display: none;
+            width: 100%;
+        }
+
+        /* 2. Cuando JS agrega .abierto al tocar la hamburguesa, aparece */
+        .navbar-responsive.abierto {
+            display: block;
+        }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 0.75rem 0;
+        }
 }

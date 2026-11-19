@@ -79,10 +79,10 @@
                 <h2>Envianos tu mensaje</h2>
                 <form action="#" method="post">
                     <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Tu nombre y apellido" required>
 
                     <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="ejemplo@correo.com" required>
 
                     <label for="asunto">Motivo de consulta:</label>
                     <select id="asunto" name="asunto" required>
@@ -104,9 +104,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Puerto Nuevo - Sitio turístico ficticio.</p>
-        <p>Trabajo Práctico - Lenguajes Informáticos 1 - UNAHUR</p>
+        <p><small>&copy; 2026 Puerto Nuevo - Sitio turístico ficticio.</small></p>
+        <p><small>Práctico - Lenguajes Informáticos 1 - UNAHUR</small></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
