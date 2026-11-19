@@ -18,7 +18,7 @@
 
 body {
     background-color: var(--color-fondo);
-    color: var(--color-texto);
+    color: #1E293B;
     font-family: var(--fuente-principal);
     font-size: 16px;
     line-height: 1.7;
@@ -294,7 +294,7 @@ select {
     font-family: inherit;
     font-size: 1rem;
     background-color: var(--color-fondo-alt);
-    color: var(--color-texto);
+    color: #1E293B;
 }
 
 input:focus,
